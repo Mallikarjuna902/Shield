@@ -1,0 +1,47 @@
+============================================================
+INSIDER THREAT DETECTION SUMMARY
+============================================================
+
+Total users analyzed: 4000
+Anomalies detected: 400
+Detection rate: 10.00%
+
+Risk Level Distribution:
+  Medium: 298
+  High: 102
+  Low: 0
+
+============================================================
+TOP 10 HIGHEST RISK USERS
+============================================================
+
+User 1653 - Risk: High - Score: -0.7516
+  Reason: total_email_size: 241096311.00; max_email_size: 11363817.00; avg_email_size: 737297.59
+
+User 831 - Risk: High - Score: -0.7465
+  Reason: total_email_size: 136521256.00; max_email_size: 6541652.00; avg_email_size: 374030.84
+
+User 1952 - Risk: High - Score: -0.7374
+  Reason: total_email_size: 448002481.00; max_email_size: 8691183.00; avg_email_size: 603776.93
+
+User 2636 - Risk: High - Score: -0.7314
+  Reason: total_email_size: 200094134.00; max_email_size: 9855441.00; avg_email_size: 615674.26
+
+User 2641 - Risk: High - Score: -0.7310
+  Reason: total_email_size: 167534032.00; max_email_size: 11255724.00; avg_email_size: 491302.15
+
+User 2479 - Risk: High - Score: -0.7308
+  Reason: total_email_size: 202935497.00; max_email_size: 7418937.00; avg_email_size: 595118.76
+
+User 1610 - Risk: High - Score: -0.7275
+  Reason: total_email_size: 138092157.00; max_email_size: 6586710.00; avg_email_size: 428857.63
+
+User 1198 - Risk: High - Score: -0.7269
+  Reason: total_email_size: 144555806.00; max_email_size: 6109625.00; avg_email_size: 469337.03
+
+User 184 - Risk: High - Score: -0.7266
+  Reason: total_email_size: 187150587.00; max_email_size: 10140590.00; avg_email_size: 623835.29
+
+User 954 - Risk: High - Score: -0.7264
+  Reason: total_email_size: 142040143.00; max_email_size: 8479912.00; avg_email_size: 421484.10
+
