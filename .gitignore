@@ -1,8 +1,91 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# Data files
-AD_Model/Data/Raw/
-AD_Model/Data/Cleaned/
+# Data directories
+AD_Model/Data/**/*
+!AD_Model/Data/.gitkeep
+
+# Python cache and build files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Build files
+/build/
+/dist/
+/out/
+.next/
+.nuxt/
+.nuxt-
+.cache/
+.temp/
+.tmp/
+.vercel/
+.netlify/
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE specific files
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Logs
+logs
+*.log
+
+# Outputs and reports
+AD_Model/Outputs/
+*.csv
+*.xlsx
+*.xls
+*.pkl
+*.h5
+*.hdf5
+*.model
+*.pt
+*.pth
+*.bin
+*.dat
+*.data
+*.idx
+*.npy
+*.npz
+*.sav
+*.joblib
+*.pkl.gz
 
 # dependencies
 /node_modules
