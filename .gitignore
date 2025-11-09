@@ -1,5 +1,18 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+# ============================================
+# Core directories to exclude
+# ============================================
+
+# Data directories - EXCLUDING ALL DATA FILES
+AD_Model/Data/**/*
+!AD_Model/Data/
+!AD_Model/Data/.gitkeep  # Keep the .gitkeep file
+
+# Model outputs and caches
+AD_Model/Outputs/**/*
+AD_Model/Models/**/*
+
 # Node.js
 node_modules/
 .npm
@@ -20,9 +33,7 @@ yarn-error.log*
 .vercel/
 .netlify/
 
-# Data directories
-AD_Model/Data/**/*
-!AD_Model/Data/.gitkeep
+# Data directories - already handled at the top
 
 # Python cache and build files
 __pycache__/
