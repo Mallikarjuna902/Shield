@@ -9,34 +9,7 @@ const FileUpload = ({ onAnalysisComplete, className = "" }) => {
   const [, setAnalyzing] = useState(false);
   const [fileInfo, setFileInfo] = useState(null);
 
-  const handleDrag = useCallback((e) => {
-    e.preventDefault();
-    e.stopPropagation();
-    if (e.type === "dragenter" || e.type === "dragover") {
-      setDragActive(true);
-    } else if (e.type === "dragleave") {
-      setDragActive(false);
-    }
-  }, []);
-
-  const handleDrop = useCallback((e) => {
-    e.preventDefault();
-    e.stopPropagation();
-    setDragActive(false);
-    
-    if (e.dataTransfer.files && e.dataTransfer.files[0]) {
-      handleFile(e.dataTransfer.files[0]);
-    }
-  }, [handleFile]);
-
-  const handleChange = (e) => {
-    e.preventDefault();
-    if (e.target.files && e.target.files[0]) {
-      handleFile(e.target.files[0]);
-    }
-  };
-
-  const handleFile = async (file) => {
+  const handleFile = useCallback(async (file) => {
     if (!file.name.toLowerCase().endsWith('.csv')) {
       toast.error('Please upload a CSV file');
       return;
@@ -101,6 +74,33 @@ const FileUpload = ({ onAnalysisComplete, className = "" }) => {
     setFileInfo(null);
     setUploading(false);
     setAnalyzing(false);
+  };
+
+  const handleDrag = useCallback((e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    if (e.type === "dragenter" || e.type === "dragover") {
+      setDragActive(true);
+    } else if (e.type === "dragleave") {
+      setDragActive(false);
+    }
+  }, []);
+
+  const handleDrop = useCallback((e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    setDragActive(false);
+    
+    if (e.dataTransfer.files && e.dataTransfer.files[0]) {
+      handleFile(e.dataTransfer.files[0]);
+    }
+  }, [handleFile]);
+
+  const handleChange = (e) => {
+    e.preventDefault();
+    if (e.target.files && e.target.files[0]) {
+      handleFile(e.target.files[0]);
+    }
   };
 
   return (

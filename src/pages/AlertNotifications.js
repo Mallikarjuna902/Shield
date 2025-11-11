@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useMemo } from 'react';
 import Layout from '../Layout';
 import { Card } from '../components/ui/card';
 import { Button } from '../components/ui/button';
@@ -6,9 +6,9 @@ import { Badge } from '../components/ui/badge';
 import { useThreat } from '../contexts/ThreatContext';
 import { generateAlertsFromThreatData } from '../utils/alertUtils';
 import { 
-  Bell, Send, Mail, MessageSquare, Clock, 
+  Send, Mail, MessageSquare, Clock, 
   CheckCircle2, XCircle, AlertTriangle, User, 
-  Search, Filter, RefreshCw, Eye, Users
+  Search, RefreshCw, Eye
 } from 'lucide-react';
 
 // Mock sent notifications history
