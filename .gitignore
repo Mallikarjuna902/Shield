@@ -4,19 +4,19 @@
 # Core directories to exclude
 # ============================================
 
-# Data directories - EXCLUDING ALL DATA FILES
+# Data and Model directories - IGNORE ALL CONTENTS
 AD_Model/Data/**/*
 !AD_Model/Data/
 !AD_Model/Data/.gitkeep  # Keep the .gitkeep file
+AD_Model/Models/**/*
+!AD_Model/Models/
+!AD_Model/Models/.gitkeep  # Keep the .gitkeep file
 
 # Explicitly ignore all CSV files
 *.csv
-!AD_Model/Data/.gitkeep
 
-# Model outputs and caches
+# Outputs and caches
 AD_Model/Outputs/**/*
-AD_Model/Models/**/*
-!AD_Model/Models/.gitkeep  # Keep the .gitkeep file
 AD_Model/__pycache__/
 AD_Model/*.py[cod]
 AD_Model/*.pkl
