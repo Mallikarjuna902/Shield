@@ -15,11 +15,10 @@ __pycache__/
 
 # Data and Model directories - IGNORE ALL CONTENTS
 AD_Model/Data/**/*
-!AD_Model/Data/
-!AD_Model/Data/.gitkeep  # Keep the .gitkeep file
+
+
 AD_Model/Models/**/*
-!AD_Model/Models/
-!AD_Model/Models/.gitkeep  # Keep the .gitkeep file
+
 
 # Explicitly ignore all CSV files
 *.csv
