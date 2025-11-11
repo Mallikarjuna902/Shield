@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { toast } from 'sonner';
-import { AlertCircle, BellRing, CheckCircle, X } from 'lucide-react';
+import { AlertCircle, BellRing, X } from 'lucide-react';
 import { useAlerts } from '../hooks/useAlerts';
 
 export const AlertNotifications = () => {

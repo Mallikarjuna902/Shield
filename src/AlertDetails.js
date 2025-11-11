@@ -6,7 +6,7 @@ import { Button } from './components/ui/button';
 import { Badge } from './components/ui/badge';
 import { useThreat } from './contexts/ThreatContext';
 import { findAlertById } from './utils/alertUtils';
-import { ArrowLeft, AlertTriangle, Info, Clock, User, Activity, Shield, FileText } from 'lucide-react';
+import { ArrowLeft, AlertTriangle, Info, Clock, Shield, FileText } from 'lucide-react';
 import { mockAlerts } from './mockData';
 
 export default function AlertDetails() {

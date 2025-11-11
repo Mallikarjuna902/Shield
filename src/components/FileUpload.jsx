@@ -1,12 +1,12 @@
 import React, { useState, useCallback } from 'react';
-import { Upload, AlertCircle, CheckCircle, Loader2 } from 'lucide-react';
+import { Upload, CheckCircle, Loader2 } from 'lucide-react';
 import { Button } from './ui/button';
 import { toast } from './ui/sonner';
 
 const FileUpload = ({ onAnalysisComplete, className = "" }) => {
   const [dragActive, setDragActive] = useState(false);
   const [uploading, setUploading] = useState(false);
-  const [analyzing, setAnalyzing] = useState(false);
+  const [, setAnalyzing] = useState(false);
   const [fileInfo, setFileInfo] = useState(null);
 
   const handleDrag = useCallback((e) => {
@@ -27,7 +27,7 @@ const FileUpload = ({ onAnalysisComplete, className = "" }) => {
     if (e.dataTransfer.files && e.dataTransfer.files[0]) {
       handleFile(e.dataTransfer.files[0]);
     }
-  }, []);
+  }, [handleFile]);
 
   const handleChange = (e) => {
     e.preventDefault();

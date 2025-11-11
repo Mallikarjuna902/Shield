@@ -6,7 +6,7 @@ import { Label } from '../ui/label';
 import { toast } from 'sonner';
 
 const Profile = ({ onClose }) => {
-  const { user, logout } = useAuth();
+  const { user } = useAuth();
   const [formData, setFormData] = useState({
     name: '',
     designation: '',

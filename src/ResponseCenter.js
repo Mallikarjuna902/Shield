@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Layout from './Layout';
 import { Card } from './components/ui/card';
 import { Button } from './components/ui/button';

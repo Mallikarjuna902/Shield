@@ -21,8 +21,8 @@ const ThreatAnalytics = ({ analysisData, className = "" }) => {
   const [sortBy, setSortBy] = useState('anomaly_score');
   const [filterRisk, setFilterRisk] = useState('all');
 
-  // Extract data safely
-  const users = analysisData?.results?.users || [];
+  // Extract and memoize data
+  const users = useMemo(() => analysisData?.results?.users || [], [analysisData?.results?.users]);
   const summary = analysisData?.results?.summary || null;
 
   // Filter and sort users
