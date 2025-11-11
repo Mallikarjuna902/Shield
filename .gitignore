@@ -4,6 +4,15 @@
 # Core directories to exclude
 # ============================================
 
+
+
+
+Data/
+Models/
+Outputs/
+__pycache__/
+
+
 # Data and Model directories - IGNORE ALL CONTENTS
 AD_Model/Data/**/*
 !AD_Model/Data/
