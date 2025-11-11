@@ -67,8 +67,7 @@ const FileUpload = ({ onAnalysisComplete, className = "" }) => {
       setUploading(false);
       setAnalyzing(false);
     }
-  };
-
+  }, [onAnalysisComplete]);
 
   const resetUpload = () => {
     setFileInfo(null);
