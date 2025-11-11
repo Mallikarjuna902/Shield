@@ -16,6 +16,7 @@ AD_Model/Data/**/*
 # Model outputs and caches
 AD_Model/Outputs/**/*
 AD_Model/Models/**/*
+!AD_Model/Models/.gitkeep  # Keep the .gitkeep file
 AD_Model/__pycache__/
 AD_Model/*.py[cod]
 AD_Model/*.pkl
